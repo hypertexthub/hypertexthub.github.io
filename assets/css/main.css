@@ -1,3 +1,105 @@
+/*Utilitaires*/
+:root {
+    --espace-inmense: 150px;
+    --espace-grand: 89px;
+    --espace-moyen: 67px;
+    --espace-courant: 28px;
+    --espace-petit: 16px;
+    /*couleurs*/
+    --couleurRouge: #d74a49;
+    --couleurVertFonce: #183e4b;
+    --couleurVerte: #1b4552;
+    --couleurVertePale: #8ba0a4;
+    --couleurBlanc: #ffffff;
+    --couleurGris: #eaeaea;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5ch;
+}
+
 body {
-    background-color: powderblue;
+    background-color: var(--couleurGris);
+
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--couleurVerte);
+}
+
+footer {
+    background-color: var(--couleurVertePale);
+    color: var(--couleurBlanc);
+}
+
+/*Rythme*/
+
+header > * {
+    margin-top: var(--espace-petit);
+}
+
+/*Universal*/
+
+img {
+    max-width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.raleway-400 > {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-700 > {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logosvg {
+    width: 70px;
+    height: 70px;
+}
+
+.logopng {
+    width: 70px;
+    height: 70px;
+}
+
+.bouton {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: var(--couleurRouge);
+    color: var(--couleurBlanc);
+    text-align: center;
+    border: 0;
+    font-family: "Raleway", sans-serif;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.bouton:hover {
+    background-color: var(--couleurVertePale);
+    color: var(--couleurBlanc);
 }
