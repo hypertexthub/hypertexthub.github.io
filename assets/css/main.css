@@ -48,6 +48,16 @@ img {
     max-width: 100%;
 }
 
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .flex-column {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +70,10 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 5px;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 .raleway-400 > {
@@ -100,6 +114,14 @@ img {
 }
 
 .bouton:hover {
-    background-color: var(--couleurVertePale);
+    background-color: var(--couleurVertFonce);
     color: var(--couleurBlanc);
+}
+
+/*Form*/
+
+.formContainer {
+    border: 2px solid var(--couleurVerte);
+    border-radius: 15px;
+    padding: 15px;
 }

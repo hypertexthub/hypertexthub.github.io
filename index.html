@@ -15,18 +15,18 @@
 
     <body>
         <header>
-            <div>
+            <div class="text-align-center">
                 <picture>
                     <img
                         class="logosvg"
-                        src="/assets/svg/logo500x500.svg"
+                        src="/assets/svg/logorouge.svg"
                         alt="hypertext hub"
                     />
                 </picture>
             </div>
         </header>
 
-        <div class="">
+        <div class="text-align-center">
             <h2>Welcome to Hypertext Hub</h2>
             <p>
                 Together, we’ll bring your web project to life with style,
@@ -38,6 +38,45 @@
                 HTML/CSS/TypeScript. We build together with the stack you
                 choose.
             </p>
+        </div>
+
+        <div class="formContainer">
+            <h3>Let's Connect</h3>
+            <form class="flex-column" id="iftttForm">
+                <label for="name">First and last name</label>
+                <input type="name" id="name" placeholder="" required />
+                <label for="email">e-mail address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="website@website.ca"
+                    required
+                />
+
+                <label for="Dropdown1">Type of Projet</label>
+                <select id="Dropdown1" name="Dropdown1">
+                    <option value="option0">Select an option</option>
+                    <option value="option1">New Website</option>
+                    <option value="option2">Website Redesign</option>
+                </select>
+
+                <label for="Dropdown2">Budget Range</label>
+                <select id="Dropdown2" name="Dropdown2">
+                    <option value="option1">3KCAD - 5KCAD</option>
+                    <option value="option2">5KCAD - 10KCAD</option>
+                    <option value="option3">10K+CAD</option>
+                </select>
+
+                <label for="message">Describe your needs</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Share the details of your project…"
+                ></textarea>
+
+                <button class="bouton" type="submit">Submit</button>
+            </form>
         </div>
 
         <footer>
