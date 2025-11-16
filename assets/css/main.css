@@ -30,8 +30,8 @@ body {
         "header    header    header"
         "textIntro textIntro textIntro"
         "sectionService   sectionService  sectionService"
-        "form1     form1     form1"
-        "footer    footer   footer";
+        "footer    footer   footer"
+        "rightsReserved    rightsReserved   rightsReserved";
     grid-template-columns: 40% 30% 30%;
     grid-template-rows: auto auto auto auto auto;
 
@@ -67,12 +67,29 @@ body {
         }
     }
 
-    & > .form1 {
-        grid-area: form1;
-    }
-
     & > footer {
         grid-area: footer;
+
+        display: grid;
+        grid-template-areas: "hyperSocial contactDetails form1";
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: auto;
+
+        & > .hyperSocial {
+            grid-area: hyperSocial;
+        }
+        & > .contactDetails {
+            grid-area: contactDetails;
+        }
+        & > .form1 {
+            grid-area: form1;
+        }
+    }
+
+    & > .rightsReserved {
+        grid-area: rightsReserved;
+        padding: 15px;
+        text-align: center;
     }
 }
 
@@ -89,10 +106,10 @@ body {
             "header    header    header"
             "textIntro textIntro textIntro"
             "sectionService   sectionService  sectionService"
-            "form1     form1     form1"
-            "footer    footer   footer";
+            "footer    footer   footer"
+            "rightsReserved    rightsReserved   rightsReserved";
         grid-template-columns: 50% 25% 25%;
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
 
         & > header {
             grid-area: header;
@@ -127,12 +144,31 @@ body {
             }
         }
 
-        & > .form1 {
-            grid-area: form1;
-        }
-
         & > footer {
             grid-area: footer;
+
+            display: grid;
+            grid-template-areas:
+                "hyperSocial contactDetails contactDetails"
+                "form1 form1 form1";
+            grid-template-columns: 50% 25% 25%;
+            grid-template-rows: auto auto;
+
+            & > .hyperSocial {
+                grid-area: hyperSocial;
+            }
+            & > .contactDetails {
+                grid-area: contactDetails;
+            }
+            & > .form1 {
+                grid-area: form1;
+            }
+        }
+
+        & > .rightsReserved {
+            grid-area: rightsReserved;
+            padding: 15px;
+            text-align: center;
         }
     }
 }
@@ -148,10 +184,10 @@ body {
             "header    header    header"
             "textIntro textIntro textIntro"
             "sectionService   sectionService  sectionService"
-            "form1     form1     form1"
-            "footer    footer   footer";
+            "footer    footer   footer"
+            "rightsReserved    rightsReserved   rightsReserved";
         grid-template-columns: 50% 25% 25%;
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
 
         & > header {
             grid-area: header;
@@ -187,27 +223,49 @@ body {
             }
         }
 
-        & > .form1 {
-            grid-area: form1;
-        }
-
         & > footer {
             grid-area: footer;
+            display: grid;
+            grid-template-areas:
+                "hyperSocial hyperSocial hyperSocial"
+                "contactDetails contactDetails contactDetails"
+                "form1 form1 form1";
+            grid-template-columns: 50% 25% 25%;
+            grid-template-rows: auto auto auto;
+
+            & > .hyperSocial {
+                grid-area: hyperSocial;
+            }
+            & > .contactDetails {
+                grid-area: contactDetails;
+            }
+            & > .form1 {
+                grid-area: form1;
+            }
+        }
+        & > .rightsReserved {
+            grid-area: rightsReserved;
+            padding: 15px;
+            text-align: center;
         }
     }
 }
 
-/*General*/
+/*Body-AreaColors*/
 
 header {
     background-color: var(--couleurVerte);
 }
 
 footer {
-    background-color: var(--couleurVertePale);
+    background-color: var(--couleurVerte);
     color: var(--couleurBlanc);
 }
 
+.rightsReserved {
+    background-color: var(--couleurVertePale);
+    color: var(--couleurBlanc);
+}
 /*Rythme*/
 
 header > * {
@@ -291,6 +349,12 @@ input {
 }
 
 /*Form*/
+
+form {
+    background-color: var(--couleurVertePale);
+    padding: 10px;
+    border-radius: 15px;
+}
 
 .formContainer {
     border: 2px solid var(--couleurVerte);
