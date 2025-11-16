@@ -21,11 +21,183 @@ html {
 
 body {
     background-color: var(--couleurGris);
-
     max-width: 1920px;
     margin: 0;
     padding: 0;
+
+    display: grid;
+    grid-template-areas:
+        "header    header    header"
+        "textIntro textIntro textIntro"
+        "sectionService   sectionService  sectionService"
+        "form1     form1     form1"
+        "footer    footer   footer";
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: auto auto auto auto auto;
+
+    & > header {
+        grid-area: header;
+    }
+
+    & > .textIntro {
+        grid-area: textIntro;
+    }
+
+    & > section {
+        grid-area: sectionService;
+        display: grid;
+        grid-template-areas:
+            "titleServices titleServices titleServices"
+            "typePro1  typePro2  typePro3";
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: auto auto;
+
+        & > .titleServices {
+            grid-area: titleServices;
+        }
+
+        & > .typePro1 {
+            grid-area: typePro1;
+        }
+        & > .typePro2 {
+            grid-area: typePro2;
+        }
+        & > .typePro3 {
+            grid-area: typePro3;
+        }
+    }
+
+    & > .form1 {
+        grid-area: form1;
+    }
+
+    & > footer {
+        grid-area: footer;
+    }
 }
+
+/*media @*/
+@media (min-width: 825px) and (max-width: 1200px) {
+    body {
+        background-color: var(--couleurGris);
+        max-width: 1920px;
+        margin: 0;
+        padding: 0;
+
+        display: grid;
+        grid-template-areas:
+            "header    header    header"
+            "textIntro textIntro textIntro"
+            "sectionService   sectionService  sectionService"
+            "form1     form1     form1"
+            "footer    footer   footer";
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: auto auto auto auto auto auto auto;
+
+        & > header {
+            grid-area: header;
+        }
+
+        & > .textIntro {
+            grid-area: textIntro;
+        }
+
+        & > section {
+            grid-area: sectionService;
+            display: grid;
+            grid-template-areas:
+                "titleServices titleServices titleServices"
+                "typePro1  typePro2  typePro2"
+                "typePro3  typePro3  typePro3";
+            grid-template-columns: 50% 25% 25%;
+            grid-template-rows: auto auto auto;
+
+            & > .titleServices {
+                grid-area: titleServices;
+            }
+
+            & > .typePro1 {
+                grid-area: typePro1;
+            }
+            & > .typePro2 {
+                grid-area: typePro2;
+            }
+            & > .typePro3 {
+                grid-area: typePro3;
+            }
+        }
+
+        & > .form1 {
+            grid-area: form1;
+        }
+
+        & > footer {
+            grid-area: footer;
+        }
+    }
+}
+
+@media (max-width: 825px) {
+    body {
+        background-color: var(--couleurGris);
+        max-width: 1920px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-areas:
+            "header    header    header"
+            "textIntro textIntro textIntro"
+            "sectionService   sectionService  sectionService"
+            "form1     form1     form1"
+            "footer    footer   footer";
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: auto auto auto auto auto auto auto;
+
+        & > header {
+            grid-area: header;
+        }
+
+        & > .textIntro {
+            grid-area: textIntro;
+        }
+
+        & > section {
+            grid-area: sectionService;
+            display: grid;
+            grid-template-areas:
+                "titleServices titleServices titleServices"
+                "typePro1  typePro1  typePro1"
+                "typePro2  typePro2  typePro2"
+                "typePro3  typePro3  typePro3";
+            grid-template-columns: 50% 25% 25%;
+            grid-template-rows: auto auto auto auto;
+
+            & > .titleServices {
+                grid-area: titleServices;
+            }
+
+            & > .typePro1 {
+                grid-area: typePro1;
+            }
+            & > .typePro2 {
+                grid-area: typePro2;
+            }
+            & > .typePro3 {
+                grid-area: typePro3;
+            }
+        }
+
+        & > .form1 {
+            grid-area: form1;
+        }
+
+        & > footer {
+            grid-area: footer;
+        }
+    }
+}
+
+/*General*/
 
 header {
     background-color: var(--couleurVerte);
