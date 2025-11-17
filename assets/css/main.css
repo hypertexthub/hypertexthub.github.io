@@ -325,6 +325,11 @@ input {
     height: 70px;
 }
 
+.iconsvg {
+    width: 45px;
+    height: 45px;
+}
+
 .logopng {
     width: 70px;
     height: 70px;
