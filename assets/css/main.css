@@ -16,7 +16,7 @@
 
 html {
     font-family: "Raleway", sans-serif;
-    line-height: 1.5ch;
+    line-height: 2.5ch;
 }
 
 body {
@@ -30,10 +30,12 @@ body {
         "header    header    header"
         "textIntro textIntro textIntro"
         "sectionService   sectionService  sectionService"
+        "choseHyper       choseHyper       choseHyper"
+        "process          process          process"
         "footer    footer   footer"
         "rightsReserved    rightsReserved   rightsReserved";
     grid-template-columns: 40% 30% 30%;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
 
     & > header {
         grid-area: header;
@@ -43,7 +45,7 @@ body {
         grid-area: textIntro;
     }
 
-    & > section {
+    & > .services {
         grid-area: sectionService;
         display: grid;
         grid-template-areas:
@@ -67,6 +69,45 @@ body {
         }
     }
 
+    & > .chose {
+        grid-area: choseHyper;
+        display: grid;
+        grid-template-areas:
+            "titleChose        titleChose"
+            "choseOne           choseTwo";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+
+        & > .titleChose {
+            grid-area: titleChose;
+        }
+
+        & > .choseOne {
+            grid-area: choseOne;
+        }
+
+        & > .choseTwo {
+            grid-area: choseTwo;
+        }
+    }
+
+    & > .process {
+        grid-area: process;
+        grid-template-areas:
+            "titleProcess"
+            "contentProcess";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+
+        & > .titleProcess {
+            grid-area: titleProcess;
+        }
+
+        & > .contentProcess {
+            grid-area: contentProcess;
+        }
+    }
+
     & > footer {
         grid-area: footer;
 
@@ -80,6 +121,9 @@ body {
         }
         & > .contactDetails {
             grid-area: contactDetails;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
         & > .form1 {
             grid-area: form1;
@@ -106,10 +150,12 @@ body {
             "header    header    header"
             "textIntro textIntro textIntro"
             "sectionService   sectionService  sectionService"
+            "choseHyper       choseHyper       choseHyper"
+            "process          process          process"
             "footer    footer   footer"
             "rightsReserved    rightsReserved   rightsReserved";
         grid-template-columns: 50% 25% 25%;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
 
         & > header {
             grid-area: header;
@@ -119,7 +165,7 @@ body {
             grid-area: textIntro;
         }
 
-        & > section {
+        & > .services {
             grid-area: sectionService;
             display: grid;
             grid-template-areas:
@@ -141,6 +187,45 @@ body {
             }
             & > .typePro3 {
                 grid-area: typePro3;
+            }
+        }
+
+        & > .chose {
+            grid-area: choseHyper;
+            display: grid;
+            grid-template-areas:
+                "titleChose        titleChose"
+                "choseOne           choseTwo";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto;
+
+            & > .titleChose {
+                grid-area: titleChose;
+            }
+
+            & > .choseOne {
+                grid-area: choseOne;
+            }
+
+            & > .choseTwo {
+                grid-area: choseTwo;
+            }
+        }
+
+        & > .process {
+            grid-area: process;
+            grid-template-areas:
+                "titleProcess"
+                "contentProcess";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+
+            & > .titleProcess {
+                grid-area: titleProcess;
+            }
+
+            & > .contentProcess {
+                grid-area: contentProcess;
             }
         }
 
@@ -184,10 +269,12 @@ body {
             "header    header    header"
             "textIntro textIntro textIntro"
             "sectionService   sectionService  sectionService"
+            "choseHyper       choseHyper       choseHyper"
+            "process          process          process"
             "footer    footer   footer"
             "rightsReserved    rightsReserved   rightsReserved";
         grid-template-columns: 50% 25% 25%;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
 
         & > header {
             grid-area: header;
@@ -197,7 +284,7 @@ body {
             grid-area: textIntro;
         }
 
-        & > section {
+        & > .services {
             grid-area: sectionService;
             display: grid;
             grid-template-areas:
@@ -220,6 +307,46 @@ body {
             }
             & > .typePro3 {
                 grid-area: typePro3;
+            }
+        }
+
+        & > .chose {
+            grid-area: choseHyper;
+            display: grid;
+            grid-template-areas:
+                "titleChose        titleChose"
+                "choseOne           choseOne"
+                "choseTwo           choseTwo";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto;
+
+            & > .titleChose {
+                grid-area: titleChose;
+            }
+
+            & > .choseOne {
+                grid-area: choseOne;
+            }
+
+            & > .choseTwo {
+                grid-area: choseTwo;
+            }
+        }
+
+        & > .process {
+            grid-area: process;
+            grid-template-areas:
+                "titleProcess"
+                "contentProcess";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+
+            & > .titleProcess {
+                grid-area: titleProcess;
+            }
+
+            & > .contentProcess {
+                grid-area: contentProcess;
             }
         }
 
@@ -351,6 +478,15 @@ input {
 .bouton:hover {
     background-color: var(--couleurVertFonce);
     color: var(--couleurBlanc);
+}
+a[href^="tel:"] {
+    color: var(--couleurBlanc) !important;
+    text-decoration: none;
+}
+
+a[href^="mailto:"] {
+    color: var(--couleurBlanc) !important;
+    text-decoration: none;
 }
 
 /*Form*/
