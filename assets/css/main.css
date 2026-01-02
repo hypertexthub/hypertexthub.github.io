@@ -35,7 +35,7 @@ body {
         "process          process          process"
         "footer    footer   footer"
         "rightsReserved    rightsReserved   rightsReserved";
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 40% 20% 40%;
     grid-template-rows: auto auto auto auto auto auto auto auto;
 
     & > header {
@@ -91,7 +91,7 @@ body {
         grid-template-areas:
             "titleServices titleServices titleServices"
             "typePro1  typePro2  typePro3";
-        grid-template-columns: 40% 30% 30%;
+        grid-template-columns: 40% 30% 40%;
         grid-template-rows: auto auto;
 
         & > .titleServices {
@@ -152,21 +152,28 @@ body {
         grid-area: footer;
 
         display: grid;
-        grid-template-areas: "hyperSocial contactDetails form1";
-        grid-template-columns: 40% 30% 30%;
-        grid-template-rows: auto;
+        grid-template-areas:
+            "hyperSocial hyperSocial hyperSocial"
+            "submit  contactDetails socialmedia ";
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: auto auto;
 
         & > .hyperSocial {
             grid-area: hyperSocial;
         }
+
+        & > .socialmedia {
+            grid-area: socialmedia;
+        }
+
         & > .contactDetails {
             grid-area: contactDetails;
             display: flex;
             flex-direction: column;
             gap: 30px;
         }
-        & > .form1 {
-            grid-area: form1;
+        & > .submit {
+            grid-area: submit;
         }
     }
 
@@ -315,19 +322,24 @@ body {
 
             display: grid;
             grid-template-areas:
-                "hyperSocial contactDetails contactDetails"
-                "form1 form1 form1";
-            grid-template-columns: 50% 25% 25%;
+                "hyperSocial hyperSocial"
+                "submit contactDetails"
+                "socialmedia      socialmedia";
+            grid-template-columns: 50% 50%;
             grid-template-rows: auto auto;
 
             & > .hyperSocial {
                 grid-area: hyperSocial;
             }
+
+            & > .socialmedia {
+                grid-area: socialmedia;
+            }
             & > .contactDetails {
                 grid-area: contactDetails;
             }
-            & > .form1 {
-                grid-area: form1;
+            & > .submit {
+                grid-area: submit;
             }
         }
 
@@ -479,20 +491,25 @@ body {
             grid-area: footer;
             display: grid;
             grid-template-areas:
-                "hyperSocial hyperSocial hyperSocial"
-                "contactDetails contactDetails contactDetails"
-                "form1 form1 form1";
-            grid-template-columns: 50% 25% 25%;
-            grid-template-rows: auto auto auto;
+                "hyperSocial"
+                "submit"
+                "contactDetails"
+                "socialmedia";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto;
 
             & > .hyperSocial {
                 grid-area: hyperSocial;
             }
+            & > .socialmedia {
+                grid-area: socialmedia;
+            }
+
             & > .contactDetails {
                 grid-area: contactDetails;
             }
-            & > .form1 {
-                grid-area: form1;
+            & > .submit {
+                grid-area: submit;
             }
         }
         & > .rightsReserved {
@@ -601,8 +618,8 @@ input {
 }
 
 .bouton:hover {
-    background-color: var(--couleurVertFonce);
-    color: var(--couleurBlanc);
+    background-color: var(--couleurGris);
+    color: var(--couleurVertFonce);
 }
 a[href^="tel:"] {
     color: var(--couleurBlanc) !important;
