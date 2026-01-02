@@ -19,6 +19,23 @@ html {
     line-height: 2.5ch;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--couleurBlanc);
+}
+
 body {
     background-color: var(--couleurGris);
     max-width: 1920px;
@@ -28,6 +45,7 @@ body {
     display: grid;
     grid-template-areas:
         "header    header    header"
+        "nav       nav       nav"
         "textIntro textIntro textIntro"
         "sectionwhy sectionwhy sectionwhy"
         "sectionService   sectionService  sectionService"
@@ -36,10 +54,15 @@ body {
         "footer    footer   footer"
         "rightsReserved    rightsReserved   rightsReserved";
     grid-template-columns: 40% 20% 40%;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
 
     & > header {
         grid-area: header;
+    }
+
+    & > nav {
+        grid-area: nav;
+        background-color: var(--couleurVertePale);
     }
 
     & > .textIntro {
@@ -195,6 +218,7 @@ body {
         display: grid;
         grid-template-areas:
             "header    header    header"
+            "nav       nav       nav"
             "textIntro textIntro textIntro"
             "sectionwhy sectionwhy sectionwhy"
             "sectionService   sectionService  sectionService"
@@ -203,10 +227,15 @@ body {
             "footer    footer   footer"
             "rightsReserved    rightsReserved   rightsReserved";
         grid-template-columns: 50% 25% 25%;
-        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
 
         & > header {
             grid-area: header;
+        }
+
+        & > nav {
+            grid-area: nav;
+            background-color: var(--couleurVertePale);
         }
 
         & > .textIntro {
@@ -322,10 +351,9 @@ body {
 
             display: grid;
             grid-template-areas:
-                "hyperSocial hyperSocial"
-                "submit contactDetails"
-                "socialmedia      socialmedia";
-            grid-template-columns: 50% 50%;
+                "hyperSocial hyperSocial hyperSocial"
+                "submit contactDetails socialmedia ";
+            grid-template-columns: 35% 35% 30%;
             grid-template-rows: auto auto;
 
             & > .hyperSocial {
@@ -360,6 +388,7 @@ body {
         display: grid;
         grid-template-areas:
             "header    header    header"
+            "nav       nav       nav"
             "textIntro textIntro textIntro"
             "sectionwhy sectionwhy sectionwhy"
             "sectionService   sectionService  sectionService"
@@ -372,6 +401,11 @@ body {
 
         & > header {
             grid-area: header;
+        }
+
+        & > nav {
+            grid-area: nav;
+            background-color: var(--couleurVertePale);
         }
 
         & > .textIntro {
@@ -643,4 +677,22 @@ form {
     border: 2px solid var(--couleurVerte);
     border-radius: 15px;
     padding: 15px;
+}
+
+.dropdownmenu {
+    position: relative;
+}
+
+.dropdownmenu .container {
+    position: absolute;
+    top: 100%;
+    background-color: var(--couleurGris);
+    transition-property: opacity, translate;
+    transition-duration: 200ms;
+}
+
+.dropdownmenu:not(:hover) .container {
+    translate: 0 -10px;
+    opacity: 0;
+    pointer-events: none;
 }
