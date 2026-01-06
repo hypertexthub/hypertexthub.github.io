@@ -85,26 +85,44 @@ body {
 
         & > .why1 {
             grid-area: why1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         & > .why2 {
             grid-area: why2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         & > .why3 {
             grid-area: why3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         & > .why4 {
             grid-area: why4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         & > .why5 {
             grid-area: why5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         & > .why6 {
             grid-area: why6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -259,26 +277,44 @@ body {
 
             & > .why1 {
                 grid-area: why1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why2 {
                 grid-area: why2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why3 {
                 grid-area: why3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why4 {
                 grid-area: why4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why5 {
                 grid-area: why5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why6 {
                 grid-area: why6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -432,26 +468,44 @@ body {
 
             & > .why1 {
                 grid-area: why1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why2 {
                 grid-area: why2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why3 {
                 grid-area: why3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why4 {
                 grid-area: why4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why5 {
                 grid-area: why5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             & > .why6 {
                 grid-area: why6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -631,6 +685,12 @@ input {
 .iconsvg {
     width: 45px;
     height: 45px;
+}
+
+.iconsvgArea1 {
+    width: 90px;
+    height: 90px;
+    fill: var(--couleurRouge);
 }
 
 .logopng {
