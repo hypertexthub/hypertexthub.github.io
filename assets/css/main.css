@@ -89,42 +89,42 @@ body {
             grid-area: why1;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
 
         & > .why2 {
             grid-area: why2;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
 
         & > .why3 {
             grid-area: why3;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
 
         & > .why4 {
             grid-area: why4;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
 
         & > .why5 {
             grid-area: why5;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
 
         & > .why6 {
             grid-area: why6;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
     }
 
@@ -283,42 +283,42 @@ body {
                 grid-area: why1;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why2 {
                 grid-area: why2;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why3 {
                 grid-area: why3;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why4 {
                 grid-area: why4;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why5 {
                 grid-area: why5;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why6 {
                 grid-area: why6;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
         }
 
@@ -476,42 +476,42 @@ body {
                 grid-area: why1;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why2 {
                 grid-area: why2;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why3 {
                 grid-area: why3;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why4 {
                 grid-area: why4;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why5 {
                 grid-area: why5;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             & > .why6 {
                 grid-area: why6;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
         }
 
