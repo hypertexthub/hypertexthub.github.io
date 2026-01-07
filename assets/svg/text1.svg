@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 550 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,17,2)">
+        <path d="M0.704,56.394C0.704,56.394 -3.424,3.014 48.869,1.349C96.145,-0.157 391.23,0.449 447.428,0.579C449.245,0.583 458.481,0.195 460.823,0.362C473.283,1.249 508.891,11.048 504.833,60.693C504.697,62.349 504.778,64.146 504.75,66.059C504.238,101.751 503.735,179.574 503.4,239.178C503.325,252.517 503.35,302.975 503.497,318.384C503.641,333.553 503.729,348.061 503.489,349.976C503.31,351.411 503.103,352.807 502.87,354.166C498.304,380.823 483.64,392.945 462.457,395.647C457.771,396.244 441.194,395.976 441.194,395.976L44.282,398.307C44.282,398.307 0.245,394.638 0.704,347.849C1.163,301.06 0.704,56.394 0.704,56.394Z" style="fill:white;stroke:rgb(234,234,234);stroke-width:3.81px;"/>
+    </g>
+    <g transform="matrix(1,0,0,0.670319,17,7.16451)">
+        <path d="M15.383,104.729L15.81,50.501C15.81,50.501 17.218,18.032 44.282,16.656C69.741,15.361 416.268,15.691 457.295,15.734C459.882,15.737 469.71,16.79 469.71,16.79C469.71,16.79 490.612,24.454 490.154,53.353C489.695,82.252 490.154,106.106 490.154,106.106L15.383,104.729Z" style="fill:rgb(27,69,82);"/>
+    </g>
+    <g transform="matrix(1,0,0,1.11054,17,-40.6073)">
+        <path d="M14.466,119.867L490.154,120.326L488.979,340.199L447.273,381.931L49.787,385.463C49.787,385.463 14.007,384.087 14.466,351.06C14.924,318.032 14.466,119.867 14.466,119.867Z" style="fill:none;stroke:rgb(27,69,82);stroke-width:3.44px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,17,2)">
+        <path d="M320.717,32.259L456.186,32.447C456.186,32.447 469.917,31.956 471.469,47.478C471.657,49.357 470.906,63.449 456.25,63.449C441.595,63.449 321.345,63.261 321.345,63.261C321.345,63.261 305.563,64.016 305.563,45.787C305.563,43.72 307.5,33.95 320.717,32.259Z" style="fill:rgb(234,234,234);"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0.486239,-14.1284)">
+        <circle cx="65.498" cy="65.394" r="14.335" style="fill:rgb(215,74,73);"/>
+    </g>
+    <g transform="matrix(1,0,0,1,36.4862,-14.1284)">
+        <circle cx="65.498" cy="65.394" r="14.335" style="fill:rgb(235,235,235);"/>
+    </g>
+    <g transform="matrix(1,0,0,1,74.4862,-14.1284)">
+        <circle cx="65.498" cy="65.394" r="14.335" style="fill:rgb(139,160,164);"/>
+    </g>
+    <g transform="matrix(1,0,0,1,3.81651,14.6881)">
+        <text x="39.563px" y="122.143px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.167px;">W<tspan x="66.565px 82.786px " y="122.143px 122.143px ">e </tspan>build custom websites from</text>
+        <text x="39.563px" y="155.476px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.167px;">scratch, designed to match your</text>
+        <text x="39.563px" y="188.809px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.167px;">brand and business goals. Each</text>
+        <text x="39.563px" y="222.143px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.167px;">website is responsive, fast, and</text>
+        <text x="39.563px" y="255.476px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.167px;">optimized for performance,</text>
+        <text x="39.563px" y="288.809px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.167px;">ensuring a strong online presence</text>
+        <text x="39.563px" y="322.143px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.167px;">across all devices.</text>
+    </g>
+    <g id="design_services.svg.svg" transform="matrix(4.16667,0,0,4.16667,485.091,347.81)">
+        <g transform="matrix(1,0,0,1,-12,-12)">
+            <path d="M8.8,10.95L10.95,8.775L9.55,7.35L8.45,8.45L7.05,7.05L8.125,5.95L7,4.825L4.825,7L8.8,10.95ZM17,19.175L19.175,17L18.05,15.875L16.95,16.95L15.55,15.55L16.625,14.45L15.2,13.05L13.05,15.2L17,19.175ZM17.6,5L19.025,6.425L17.6,5ZM7.25,21L3,21L3,16.75L7.375,12.375L2,7L7,2L12.4,7.4L16.175,3.6C16.375,3.4 16.6,3.25 16.85,3.15C17.1,3.05 17.358,3 17.625,3C17.892,3 18.15,3.05 18.4,3.15C18.65,3.25 18.875,3.4 19.075,3.6L20.4,4.95C20.6,5.15 20.75,5.375 20.85,5.625C20.95,5.875 21,6.133 21,6.4C21,6.667 20.95,6.921 20.85,7.162C20.75,7.404 20.6,7.625 20.4,7.825L16.625,11.625L22,17L17,22L11.625,16.625L7.25,21ZM5,19L6.4,19L16.2,9.225L14.775,7.8L5,17.6L5,19ZM16.2,9.225L14.775,7.8L16.2,9.225Z" style="fill:rgb(27,69,82);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
