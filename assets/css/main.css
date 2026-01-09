@@ -346,7 +346,6 @@ body {
             & > .typePro3 {
                 grid-area: typePro3;
                 text-align: center;
-                place-content: center;
 
                 & img {
                     max-width: 53%;
@@ -540,21 +539,21 @@ body {
                 grid-area: typePro1;
                 text-align: center;
                 & .overlay {
-                    padding: 35px;
+                    padding: 40px;
                 }
             }
             & > .typePro2 {
                 grid-area: typePro2;
                 text-align: center;
                 & .overlay {
-                    padding: 35px;
+                    padding: 40px;
                 }
             }
             & > .typePro3 {
                 grid-area: typePro3;
                 text-align: center;
                 & .overlay {
-                    padding: 35px;
+                    padding: 40px;
                 }
             }
         }
