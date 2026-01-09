@@ -343,14 +343,17 @@ body {
             & > .typePro3 {
                 grid-area: typePro3;
                 text-align: center;
+                place-content: center;
 
                 & img {
                     max-width: 53%;
-                    margin-left: 240px;
+                    display: block;
+                    margin: 0 auto;
                 }
                 & .overlay {
                     max-width: 45%;
-                    margin-left: 270px;
+                    padding-top: 90px;
+                    margin: 0 auto;
                 }
             }
         }
@@ -533,14 +536,23 @@ body {
             & > .typePro1 {
                 grid-area: typePro1;
                 text-align: center;
+                & .overlay {
+                    padding: 50px;
+                }
             }
             & > .typePro2 {
                 grid-area: typePro2;
                 text-align: center;
+                & .overlay {
+                    padding: 50px;
+                }
             }
             & > .typePro3 {
                 grid-area: typePro3;
                 text-align: center;
+                & .overlay {
+                    padding: 50px;
+                }
             }
         }
 
