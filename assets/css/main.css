@@ -540,21 +540,21 @@ body {
                 grid-area: typePro1;
                 text-align: center;
                 & .overlay {
-                    padding: 50px;
+                    padding: 35px;
                 }
             }
             & > .typePro2 {
                 grid-area: typePro2;
                 text-align: center;
                 & .overlay {
-                    padding: 50px;
+                    padding: 35px;
                 }
             }
             & > .typePro3 {
                 grid-area: typePro3;
                 text-align: center;
                 & .overlay {
-                    padding: 50px;
+                    padding: 35px;
                 }
             }
         }
