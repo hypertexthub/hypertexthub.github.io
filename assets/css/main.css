@@ -146,12 +146,15 @@ body {
 
         & > .typePro1 {
             grid-area: typePro1;
+            text-align: center;
         }
         & > .typePro2 {
             grid-area: typePro2;
+            text-align: center;
         }
         & > .typePro3 {
             grid-area: typePro3;
+            text-align: center;
         }
     }
 
