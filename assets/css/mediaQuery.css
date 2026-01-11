@@ -1,0 +1,846 @@
+/*media up to @1920px**/
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header    header    header"
+        "nav       nav       nav"
+        "textIntro textIntro textIntro"
+        "sectionwhy sectionwhy sectionwhy"
+        "sectionService   sectionService  sectionService"
+        "choseHyper       choseHyper       choseHyper"
+        "process          process          process"
+        "footer    footer   footer"
+        "rightsReserved    rightsReserved   rightsReserved";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+
+    & > header {
+        grid-area: header;
+    }
+
+    & > nav {
+        grid-area: nav;
+        background-color: var(--couleurVertePale);
+    }
+
+    & > .textIntro {
+        grid-area: textIntro;
+    }
+
+    & > .justification {
+        margin-left: 70px;
+        margin-right: 70px;
+        grid-area: sectionwhy;
+        display: grid;
+        grid-template-areas:
+            "titleWhy titleWhy titleWhy"
+            "why1  why2  why3"
+            "why4  why5  why5";
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: auto auto auto;
+
+        & > .titleWhy {
+            grid-area: titleWhy;
+        }
+
+        & > .why1 {
+            grid-area: why1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        & > .why2 {
+            grid-area: why2;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        & > .why3 {
+            grid-area: why3;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        & > .why4 {
+            grid-area: why4;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        & > .why5 {
+            grid-area: why5;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+
+    & > .services {
+        grid-area: sectionService;
+        display: grid;
+        grid-template-areas:
+            "titleServices titleServices titleServices"
+            "typePro1  typePro2  typePro3";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto auto;
+
+        & > .titleServices {
+            grid-area: titleServices;
+        }
+
+        & > .typePro1 {
+            grid-area: typePro1;
+            text-align: center;
+        }
+        & > .typePro2 {
+            grid-area: typePro2;
+            text-align: center;
+        }
+        & > .typePro3 {
+            grid-area: typePro3;
+            text-align: center;
+        }
+    }
+
+    & > .chose {
+        grid-area: choseHyper;
+        display: grid;
+        grid-template-areas:
+            "titleChose        titleChose"
+            "choseOne           choseTwo";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+
+        & > .titleChose {
+            grid-area: titleChose;
+        }
+
+        & > .choseOne {
+            grid-area: choseOne;
+        }
+
+        & > .choseTwo {
+            grid-area: choseTwo;
+        }
+    }
+
+    & > .process {
+        grid-area: process;
+        display: grid;
+        grid-template-areas:
+            "titleProcess titleProcess titleProcess"
+            "conception1 conception2 conception3"
+            "design1 design2 design3"
+            "dev1 dev2 dev3"
+            "framework1 framework2 framework3"
+            "lunch1 lunch2 lunch3";
+
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto auto auto auto auto auto;
+
+        & > .titleProcess {
+            grid-area: titleProcess;
+        }
+
+        & > .conception1 {
+            grid-area: conception1;
+        }
+
+        & > .conception2 {
+            grid-area: conception2;
+        }
+
+        & > .conception3 {
+            grid-area: conception3;
+        }
+
+        & > .design1 {
+            grid-area: design1;
+        }
+
+        & > .design2 {
+            grid-area: design2;
+        }
+
+        & > .design3 {
+            grid-area: design3;
+        }
+
+        & > .dev1 {
+            grid-area: dev1;
+        }
+
+        & > .dev2 {
+            grid-area: dev2;
+        }
+
+        & > .dev3 {
+            grid-area: dev3;
+        }
+
+        & > .framework1 {
+            grid-area: framework1;
+        }
+
+        & > .framework2 {
+            grid-area: framework2;
+        }
+
+        & > .framework3 {
+            grid-area: framework3;
+        }
+
+        & > .lunch1 {
+            grid-area: lunch1;
+        }
+
+        & > .lunch2 {
+            grid-area: lunch2;
+        }
+
+        & > .lunch3 {
+            grid-area: lunch3;
+        }
+    }
+
+    & > footer {
+        grid-area: footer;
+
+        display: grid;
+        grid-template-areas:
+            "hyperSocial hyperSocial hyperSocial"
+            "submit  contactDetails socialmedia ";
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: auto auto;
+
+        & > .hyperSocial {
+            grid-area: hyperSocial;
+        }
+
+        & > .socialmedia {
+            grid-area: socialmedia;
+        }
+
+        & > .contactDetails {
+            grid-area: contactDetails;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        & > .submit {
+            grid-area: submit;
+        }
+    }
+
+    & > .rightsReserved {
+        grid-area: rightsReserved;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+/*media @1920px-1200px*/
+@media (min-width: 825px) and (max-width: 1200px) {
+    body {
+        background-color: var(--couleurGris);
+        max-width: 1920px;
+        margin: 0;
+        padding: 0;
+
+        display: grid;
+        grid-template-areas:
+            "header    header    "
+            "nav       nav       "
+            "textIntro textIntro "
+            "sectionwhy sectionwhy "
+            "sectionService   sectionService"
+            "choseHyper       choseHyper       "
+            "process          process          "
+            "footer    footer   "
+            "rightsReserved  rightsReserved";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+
+        & > header {
+            grid-area: header;
+        }
+
+        & > nav {
+            grid-area: nav;
+            background-color: var(--couleurVertePale);
+        }
+
+        & > .textIntro {
+            grid-area: textIntro;
+        }
+
+        & > .justification {
+            margin-left: 50px;
+            margin-right: 50px;
+            grid-area: sectionwhy;
+            display: grid;
+            grid-template-areas:
+                "titleWhy titleWhy"
+                "why1  why2"
+                "why3  why4"
+                "why5  why5";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto auto;
+
+            & > .titleWhy {
+                grid-area: titleWhy;
+            }
+
+            & > .why1 {
+                grid-area: why1;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why2 {
+                grid-area: why2;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why3 {
+                grid-area: why3;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why4 {
+                grid-area: why4;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why5 {
+                grid-area: why5;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        & > .services {
+            grid-area: sectionService;
+            display: grid;
+            grid-template-areas:
+                "titleServices titleServices"
+                "typePro1  typePro2"
+                "typePro3  typePro3";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto;
+
+            & > .titleServices {
+                grid-area: titleServices;
+            }
+
+            & > .typePro1 {
+                grid-area: typePro1;
+                text-align: center;
+            }
+            & > .typePro2 {
+                grid-area: typePro2;
+                text-align: center;
+            }
+            & > .typePro3 {
+                grid-area: typePro3;
+                text-align: center;
+
+                & img {
+                    max-width: 53%;
+                    display: block;
+                    margin: 0 auto;
+                }
+                & .overlay {
+                    max-width: 45%;
+                    padding-top: 90px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        & > .chose {
+            grid-area: choseHyper;
+            display: grid;
+            grid-template-areas:
+                "titleChose        titleChose"
+                "choseOne           choseTwo";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto;
+
+            & > .titleChose {
+                grid-area: titleChose;
+            }
+
+            & > .choseOne {
+                grid-area: choseOne;
+            }
+
+            & > .choseTwo {
+                grid-area: choseTwo;
+            }
+        }
+
+        & > .process {
+            grid-area: process;
+            display: grid;
+            grid-template-areas:
+                "titleProcess titleProcess"
+                "conception1 conception2 "
+                "conception3 conception3"
+                "design1 design2 "
+                "design3 design3"
+                "dev1 dev2"
+                "dev3 dev3"
+                "framework1 framework2 "
+                "framework3 framework3"
+                "lunch1 lunch2"
+                "lunch3 lunch3";
+
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+
+            & > .titleProcess {
+                grid-area: titleProcess;
+            }
+
+            & > .conception1 {
+                grid-area: conception1;
+            }
+
+            & > .conception2 {
+                grid-area: conception2;
+            }
+
+            & > .conception3 {
+                grid-area: conception3;
+                text-align: center;
+
+                & img {
+                    max-width: 43%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                & .overlay2 {
+                    max-width: 35%;
+                    margin: 0 auto;
+                }
+            }
+
+            & > .design1 {
+                grid-area: design1;
+            }
+
+            & > .design2 {
+                grid-area: design2;
+            }
+
+            & > .design3 {
+                grid-area: design3;
+            }
+
+            & > .dev1 {
+                grid-area: dev1;
+            }
+
+            & > .dev2 {
+                grid-area: dev2;
+            }
+
+            & > .dev3 {
+                grid-area: dev3;
+            }
+
+            & > .framework1 {
+                grid-area: framework1;
+            }
+
+            & > .framework2 {
+                grid-area: framework2;
+            }
+
+            & > .framework3 {
+                grid-area: framework3;
+            }
+
+            & > .lunch1 {
+                grid-area: lunch1;
+            }
+
+            & > .lunch2 {
+                grid-area: lunch2;
+            }
+
+            & > .lunch3 {
+                grid-area: lunch3;
+            }
+        }
+
+        & > footer {
+            grid-area: footer;
+
+            display: grid;
+            grid-template-areas:
+                "hyperSocial hyperSocial hyperSocial"
+                "submit contactDetails socialmedia ";
+            grid-template-columns: 35% 35% 30%;
+            grid-template-rows: auto auto;
+
+            & > .hyperSocial {
+                grid-area: hyperSocial;
+            }
+
+            & > .socialmedia {
+                grid-area: socialmedia;
+            }
+            & > .contactDetails {
+                grid-area: contactDetails;
+            }
+            & > .submit {
+                grid-area: submit;
+            }
+        }
+
+        & > .rightsReserved {
+            grid-area: rightsReserved;
+            padding: 15px;
+            text-align: center;
+        }
+    }
+}
+
+/*media up to @825px**/
+@media (max-width: 825px) {
+    body {
+        background-color: var(--couleurGris);
+        max-width: 1920px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-areas:
+            "header    header    header"
+            "nav       nav       nav"
+            "textIntro textIntro textIntro"
+            "sectionwhy sectionwhy sectionwhy"
+            "sectionService   sectionService  sectionService"
+            "choseHyper       choseHyper       choseHyper"
+            "process          process          process"
+            "footer    footer   footer"
+            "rightsReserved    rightsReserved   rightsReserved";
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+
+        & > header {
+            grid-area: header;
+        }
+
+        & > nav {
+            grid-area: nav;
+            background-color: var(--couleurVertePale);
+        }
+
+        & > .textIntro {
+            grid-area: textIntro;
+        }
+
+        & > .justification {
+            margin-left: 25px;
+            margin-right: 25px;
+            grid-area: sectionwhy;
+            display: grid;
+            grid-template-areas:
+                "titleWhy"
+                "why1"
+                "why2"
+                "why3"
+                "why4"
+                "why5";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto auto auto;
+
+            & > .titleWhy {
+                grid-area: titleWhy;
+            }
+
+            & > .why1 {
+                grid-area: why1;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why2 {
+                grid-area: why2;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why3 {
+                grid-area: why3;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why4 {
+                grid-area: why4;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            & > .why5 {
+                grid-area: why5;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        & > .services {
+            grid-area: sectionService;
+            display: grid;
+            grid-template-areas:
+                "titleServices"
+                "typePro1"
+                "typePro2"
+                "typePro3";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto;
+
+            & > .titleServices {
+                grid-area: titleServices;
+            }
+
+            & > .typePro1 {
+                grid-area: typePro1;
+                text-align: center;
+                & .overlay {
+                    padding: 40px;
+                }
+            }
+            & > .typePro2 {
+                grid-area: typePro2;
+                text-align: center;
+                & .overlay {
+                    padding: 40px;
+                }
+            }
+            & > .typePro3 {
+                grid-area: typePro3;
+                text-align: center;
+                & .overlay {
+                    padding: 40px;
+                }
+            }
+        }
+
+        & > .chose {
+            grid-area: choseHyper;
+            display: grid;
+            grid-template-areas:
+                "titleChose"
+                "choseOne"
+                "choseTwo";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
+
+            & > .titleChose {
+                grid-area: titleChose;
+            }
+
+            & > .choseOne {
+                grid-area: choseOne;
+            }
+
+            & > .choseTwo {
+                grid-area: choseTwo;
+            }
+        }
+
+        & > .process {
+            grid-area: process;
+            display: grid;
+            grid-template-areas:
+                "titleProcess"
+                "conception1 "
+                "conception2"
+                "conception3"
+                "design1"
+                "design2"
+                "design3"
+                "dev1"
+                "dev2"
+                "dev3"
+                "framework1"
+                "framework2"
+                "framework3"
+                "lunch1"
+                "lunch2"
+                "lunch3";
+
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+
+            & > .titleProcess {
+                grid-area: titleProcess;
+            }
+
+            & > .conception1 {
+                grid-area: conception1;
+                & img {
+                    max-width: 53%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                & .overlay2 {
+                    max-width: 43%;
+                    margin: 0 auto;
+                }
+            }
+
+            & > .conception2 {
+                grid-area: conception2;
+                margin-top: 30px;
+
+                & img {
+                    max-width: 53%;
+                    min-width: 50%;
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+
+                & .overlay2 {
+                    max-width: 45%;
+                    min-width: 70%;
+                    margin: 0 auto;
+                    padding-top: 40px;
+                    margin-top: 30px;
+                }
+            }
+
+            & > .conception3 {
+                grid-area: conception3;
+                margin-top: 30px;
+                & img {
+                    max-width: 53%;
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+
+                & .overlay2 {
+                    max-width: 43%;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                    margin-top: 50px;
+                }
+            }
+
+            & > .design1 {
+                grid-area: design1;
+            }
+
+            & > .design2 {
+                grid-area: design2;
+            }
+
+            & > .design3 {
+                grid-area: design3;
+            }
+
+            & > .dev1 {
+                grid-area: dev1;
+            }
+
+            & > .dev2 {
+                grid-area: dev2;
+            }
+
+            & > .dev3 {
+                grid-area: dev3;
+            }
+
+            & > .framework1 {
+                grid-area: framework1;
+            }
+
+            & > .framework2 {
+                grid-area: framework2;
+            }
+
+            & > .framework3 {
+                grid-area: framework3;
+            }
+
+            & > .lunch1 {
+                grid-area: lunch1;
+            }
+
+            & > .lunch2 {
+                grid-area: lunch2;
+            }
+
+            & > .lunch3 {
+                grid-area: lunch3;
+            }
+        }
+
+        & > footer {
+            grid-area: footer;
+            display: grid;
+            grid-template-areas:
+                "hyperSocial"
+                "submit"
+                "contactDetails"
+                "socialmedia";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto;
+
+            & > .hyperSocial {
+                grid-area: hyperSocial;
+            }
+            & > .socialmedia {
+                grid-area: socialmedia;
+            }
+
+            & > .contactDetails {
+                grid-area: contactDetails;
+            }
+            & > .submit {
+                grid-area: submit;
+            }
+        }
+        & > .rightsReserved {
+            grid-area: rightsReserved;
+            padding: 15px;
+            text-align: center;
+        }
+    }
+}
