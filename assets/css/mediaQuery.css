@@ -443,11 +443,6 @@ body {
                     display: block;
                     margin: 0 auto;
                 }
-
-                & .overlay2 {
-                    max-width: 35%;
-                    margin: 0 auto;
-                }
             }
 
             & > .design1 {
@@ -717,49 +712,24 @@ body {
                     display: block;
                     margin: 0 auto;
                 }
-
-                & .overlay2 {
-                    max-width: 43%;
-                    margin: 0 auto;
-                }
             }
 
             & > .conception2 {
                 grid-area: conception2;
-                margin-top: 30px;
 
                 & img {
                     max-width: 53%;
-                    min-width: 50%;
                     display: block;
                     margin: 0 auto;
-                    margin-top: 30px;
-                }
-
-                & .overlay2 {
-                    max-width: 45%;
-                    min-width: 70%;
-                    margin: 0 auto;
-                    padding-top: 40px;
-                    margin-top: 30px;
                 }
             }
 
             & > .conception3 {
                 grid-area: conception3;
-                margin-top: 30px;
                 & img {
                     max-width: 53%;
                     display: block;
                     margin: 0 auto;
-                    margin-top: 30px;
-                }
-
-                & .overlay2 {
-                    max-width: 43%;
-                    margin: 0 auto;
-                    padding-top: 30px;
-                    margin-top: 50px;
                 }
             }
 
