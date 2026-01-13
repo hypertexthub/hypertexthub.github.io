@@ -15,9 +15,26 @@
     --couleurGris: #eaeaea;
 }
 
+/*outline*/
+
+/** {
+    outline: 1px dashed rgb(102, 229, 255);
+}*/
+
 html {
     font-family: "Raleway", sans-serif;
     line-height: 2.5ch;
+}
+
+/*Rythme*/
+
+body > section {
+    margin-top: var(--espace-grand);
+    margin-bottom: var(--espace-courant);
+}
+
+body > section > div {
+    margin-top: var(--espace-courant);
 }
 
 nav {
