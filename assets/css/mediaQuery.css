@@ -144,11 +144,11 @@ body {
         display: grid;
         grid-template-areas:
             "titleProcess titleProcess titleProcess"
-            "conception1 conception2 conception3"
-            "design1 design2 design3"
-            "dev1 dev2 dev3"
-            "framework1 framework2 framework3"
-            "lunch1 lunch2 lunch3";
+            "concept concept concept"
+            "design design design"
+            "develop develop develop"
+            "frame frame frame"
+            "lunch lunch lunch";
 
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: auto auto auto auto auto auto;
@@ -157,64 +157,104 @@ body {
             grid-area: titleProcess;
         }
 
-        & > .conception1 {
-            grid-area: conception1;
+        & .concept {
+            grid-area: concept;
+            display: grid;
+            grid-template-areas: "conception1 conception2 conception3";
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto;
+
+            & > .conception1 {
+                grid-area: conception1;
+            }
+
+            & > .conception2 {
+                grid-area: conception2;
+            }
+
+            & > .conception3 {
+                grid-area: conception3;
+            }
         }
 
-        & > .conception2 {
-            grid-area: conception2;
+        & .design {
+            grid-area: design;
+            display: grid;
+            grid-template-areas: "design1 design2 design3";
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto;
+
+            & > .design1 {
+                grid-area: design1;
+            }
+
+            & > .design2 {
+                grid-area: design2;
+            }
+
+            & > .design3 {
+                grid-area: design3;
+            }
         }
 
-        & > .conception3 {
-            grid-area: conception3;
+        & .develop {
+            grid-area: develop;
+            display: grid;
+            grid-template-areas: "dev1 dev2 dev3";
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto;
+
+            & > .dev1 {
+                grid-area: dev1;
+            }
+
+            & > .dev2 {
+                grid-area: dev2;
+            }
+
+            & > .dev3 {
+                grid-area: dev3;
+            }
         }
 
-        & > .design1 {
-            grid-area: design1;
+        & .frame {
+            grid-area: frame;
+            display: grid;
+            grid-template-areas: "framework1 framework2 framework3";
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto;
+
+            & > .framework1 {
+                grid-area: framework1;
+            }
+
+            & > .framework2 {
+                grid-area: framework2;
+            }
+
+            & > .framework3 {
+                grid-area: framework3;
+            }
         }
 
-        & > .design2 {
-            grid-area: design2;
-        }
+        & .lunch {
+            grid-area: lunch;
+            display: grid;
+            grid-template-areas: "lunch1 lunch2 lunch3";
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto;
 
-        & > .design3 {
-            grid-area: design3;
-        }
+            & > .lunch1 {
+                grid-area: lunch1;
+            }
 
-        & > .dev1 {
-            grid-area: dev1;
-        }
+            & > .lunch2 {
+                grid-area: lunch2;
+            }
 
-        & > .dev2 {
-            grid-area: dev2;
-        }
-
-        & > .dev3 {
-            grid-area: dev3;
-        }
-
-        & > .framework1 {
-            grid-area: framework1;
-        }
-
-        & > .framework2 {
-            grid-area: framework2;
-        }
-
-        & > .framework3 {
-            grid-area: framework3;
-        }
-
-        & > .lunch1 {
-            grid-area: lunch1;
-        }
-
-        & > .lunch2 {
-            grid-area: lunch2;
-        }
-
-        & > .lunch3 {
-            grid-area: lunch3;
+            & > .lunch3 {
+                grid-area: lunch3;
+            }
         }
     }
 
@@ -407,90 +447,128 @@ body {
             grid-area: process;
             display: grid;
             grid-template-areas:
-                "titleProcess titleProcess"
-                "conception1 conception2 "
-                "conception3 conception3"
-                "design1 design2 "
-                "design3 design3"
-                "dev1 dev2"
-                "dev3 dev3"
-                "framework1 framework2 "
-                "framework3 framework3"
-                "lunch1 lunch2"
-                "lunch3 lunch3";
+                "titleProcess titleProcess titleProcess"
+                "concept concept concept"
+                "design design design"
+                "develop develop develop"
+                "frame frame frame"
+                "lunch lunch lunch";
 
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto auto auto auto auto auto;
 
             & > .titleProcess {
                 grid-area: titleProcess;
             }
 
-            & > .conception1 {
-                grid-area: conception1;
-            }
+            & .concept {
+                grid-area: concept;
+                display: grid;
+                grid-template-areas:
+                    "conception1    conception2"
+                    "conception3    conception3";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto auto;
 
-            & > .conception2 {
-                grid-area: conception2;
-            }
+                & > .conception1 {
+                    grid-area: conception1;
+                }
 
-            & > .conception3 {
-                grid-area: conception3;
-                text-align: center;
+                & > .conception2 {
+                    grid-area: conception2;
+                }
 
-                & img {
-                    max-width: 43%;
-                    display: block;
-                    margin: 0 auto;
+                & > .conception3 {
+                    grid-area: conception3;
                 }
             }
 
-            & > .design1 {
-                grid-area: design1;
+            & .design {
+                grid-area: design;
+                display: grid;
+                grid-template-areas:
+                    "design1 design2"
+                    "design3  design3";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto auto;
+
+                & > .design1 {
+                    grid-area: design1;
+                }
+
+                & > .design2 {
+                    grid-area: design2;
+                }
+
+                & > .design3 {
+                    grid-area: design3;
+                }
             }
 
-            & > .design2 {
-                grid-area: design2;
+            & .develop {
+                grid-area: develop;
+                display: grid;
+                grid-template-areas:
+                    "dev1 dev2"
+                    "dev3 dev3";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto auto;
+
+                & > .dev1 {
+                    grid-area: dev1;
+                }
+
+                & > .dev2 {
+                    grid-area: dev2;
+                }
+
+                & > .dev3 {
+                    grid-area: dev3;
+                }
             }
 
-            & > .design3 {
-                grid-area: design3;
+            & .frame {
+                grid-area: frame;
+                display: grid;
+                grid-template-areas:
+                    "framework1 framework2"
+                    "framework3 framework3 ";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto auto;
+
+                & > .framework1 {
+                    grid-area: framework1;
+                }
+
+                & > .framework2 {
+                    grid-area: framework2;
+                }
+
+                & > .framework3 {
+                    grid-area: framework3;
+                }
             }
 
-            & > .dev1 {
-                grid-area: dev1;
-            }
+            & .lunch {
+                grid-area: lunch;
+                display: grid;
+                grid-template-areas:
+                    "lunch1 lunch2 "
+                    "lunch3 lunch3";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto auto;
 
-            & > .dev2 {
-                grid-area: dev2;
-            }
+                & > .lunch1 {
+                    grid-area: lunch1;
+                }
 
-            & > .dev3 {
-                grid-area: dev3;
-            }
+                & > .lunch2 {
+                    grid-area: lunch2;
+                }
 
-            & > .framework1 {
-                grid-area: framework1;
-            }
-
-            & > .framework2 {
-                grid-area: framework2;
-            }
-
-            & > .framework3 {
-                grid-area: framework3;
-            }
-
-            & > .lunch1 {
-                grid-area: lunch1;
-            }
-
-            & > .lunch2 {
-                grid-area: lunch2;
-            }
-
-            & > .lunch3 {
-                grid-area: lunch3;
+                & > .lunch3 {
+                    grid-area: lunch3;
+                }
             }
         }
 
@@ -681,106 +759,135 @@ body {
             grid-area: process;
             display: grid;
             grid-template-areas:
-                "titleProcess"
-                "conception1 "
-                "conception2"
-                "conception3"
-                "design1"
-                "design2"
-                "design3"
-                "dev1"
-                "dev2"
-                "dev3"
-                "framework1"
-                "framework2"
-                "framework3"
-                "lunch1"
-                "lunch2"
-                "lunch3";
+                "titleProcess titleProcess titleProcess"
+                "concept concept concept"
+                "design design design"
+                "develop develop develop"
+                "frame frame frame"
+                "lunch lunch lunch";
 
-            grid-template-columns: 100%;
-            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto auto auto auto auto auto;
 
             & > .titleProcess {
                 grid-area: titleProcess;
             }
 
-            & > .conception1 {
-                grid-area: conception1;
-                & img {
-                    max-width: 53%;
-                    display: block;
-                    margin: 0 auto;
+            & .concept {
+                grid-area: concept;
+                display: grid;
+                grid-template-areas:
+                    "conception1"
+                    "conception2"
+                    "conception3";
+                grid-template-columns: 100%;
+                grid-template-rows: auto auto auto;
+
+                & > .conception1 {
+                    grid-area: conception1;
+                }
+
+                & > .conception2 {
+                    grid-area: conception2;
+                }
+
+                & > .conception3 {
+                    grid-area: conception3;
                 }
             }
 
-            & > .conception2 {
-                grid-area: conception2;
+            & .design {
+                grid-area: design;
+                display: grid;
+                grid-template-areas:
+                    "design1"
+                    "design2"
+                    "design3";
+                grid-template-columns: 100%;
+                grid-template-rows: auto auto auto;
 
-                & img {
-                    max-width: 53%;
-                    display: block;
-                    margin: 0 auto;
+                & > .design1 {
+                    grid-area: design1;
+                }
+
+                & > .design2 {
+                    grid-area: design2;
+                }
+
+                & > .design3 {
+                    grid-area: design3;
                 }
             }
 
-            & > .conception3 {
-                grid-area: conception3;
-                & img {
-                    max-width: 53%;
-                    display: block;
-                    margin: 0 auto;
+            & .develop {
+                grid-area: develop;
+                display: grid;
+                grid-template-areas:
+                    "dev1"
+                    "dev2"
+                    "dev3";
+                grid-template-columns: 100%;
+                grid-template-rows: auto auto auto;
+
+                & > .dev1 {
+                    grid-area: dev1;
+                }
+
+                & > .dev2 {
+                    grid-area: dev2;
+                }
+
+                & > .dev3 {
+                    grid-area: dev3;
                 }
             }
 
-            & > .design1 {
-                grid-area: design1;
+            & .frame {
+                grid-area: frame;
+                display: grid;
+                grid-template-areas:
+                    "framework1"
+                    "framework2"
+                    "framework3";
+                grid-template-columns: 100%;
+                grid-template-rows: auto auto auto;
+
+                & > .framework1 {
+                    grid-area: framework1;
+                }
+
+                & > .framework2 {
+                    grid-area: framework2;
+                }
+
+                & > .framework3 {
+                    grid-area: framework3;
+                }
             }
 
-            & > .design2 {
-                grid-area: design2;
+            & .lunch {
+                grid-area: lunch;
+                display: grid;
+                grid-template-areas:
+                    "lunch1"
+                    "lunch2"
+                    "lunch3";
+                grid-template-columns: 100%;
+                grid-template-rows: auto auto auto;
+
+                & > .lunch1 {
+                    grid-area: lunch1;
+                }
+
+                & > .lunch2 {
+                    grid-area: lunch2;
+                }
+
+                & > .lunch3 {
+                    grid-area: lunch3;
+                }
             }
 
-            & > .design3 {
-                grid-area: design3;
-            }
-
-            & > .dev1 {
-                grid-area: dev1;
-            }
-
-            & > .dev2 {
-                grid-area: dev2;
-            }
-
-            & > .dev3 {
-                grid-area: dev3;
-            }
-
-            & > .framework1 {
-                grid-area: framework1;
-            }
-
-            & > .framework2 {
-                grid-area: framework2;
-            }
-
-            & > .framework3 {
-                grid-area: framework3;
-            }
-
-            & > .lunch1 {
-                grid-area: lunch1;
-            }
-
-            & > .lunch2 {
-                grid-area: lunch2;
-            }
-
-            & > .lunch3 {
-                grid-area: lunch3;
-            }
-        }
 
         & > footer {
             grid-area: footer;

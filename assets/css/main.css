@@ -37,6 +37,46 @@ body > section > div {
     margin-top: var(--espace-courant);
 }
 
+.concept > div:first-of-type {
+    margin-top: var(--espace-grand);
+
+    & .concept > div:nth-last-of-type {
+        margin-bottom: var(--espace-grand);
+    }
+}
+
+.design > div:first-of-type {
+    margin-top: var(--espace-grand);
+
+    & .design > div:nth-last-of-type {
+        margin-bottom: var(--espace-grand);
+    }
+}
+
+.develop > div:first-of-type {
+    margin-top: var(--espace-grand);
+
+    & .develop > div:nth-last-of-type {
+        margin-bottom: var(--espace-grand);
+    }
+}
+
+.frame > div:first-of-type {
+    margin-top: var(--espace-grand);
+
+    & .frame > div:nth-last-of-type {
+        margin-bottom: var(--espace-grand);
+    }
+}
+
+.lunch > div:first-of-type {
+    margin-top: var(--espace-grand);
+
+    & .lunch > div:nth-last-of-type {
+        margin-bottom: var(--espace-grand);
+    }
+}
+
 nav {
     display: flex;
     justify-content: space-between;
