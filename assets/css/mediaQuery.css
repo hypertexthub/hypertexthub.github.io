@@ -17,6 +17,8 @@ body {
 
     & > header {
         grid-area: header;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 
     & > nav {
@@ -26,6 +28,7 @@ body {
 
     & > .textIntro {
         grid-area: textIntro;
+        margin-top: 30px;
     }
 
     & > .justification {
@@ -125,6 +128,8 @@ body {
             "choseOne           choseTwo";
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto;
+        margin-left: 50px;
+         margin-right: 50px;
 
         & > .titleChose {
             grid-area: titleChose;
@@ -152,7 +157,7 @@ body {
 
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: auto auto auto auto auto auto;
-
+        margin-right: 50px;
         & > .titleProcess {
             grid-area: titleProcess;
         }
@@ -285,6 +290,8 @@ body {
 
         & > .hyperSocial {
             grid-area: hyperSocial;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         & > .socialmedia {
@@ -444,6 +451,8 @@ body {
                 "choseOne           choseTwo";
             grid-template-columns: 50% 50%;
             grid-template-rows: auto auto;
+            padding-left: 40px;
+            padding-right: 40px;
 
             & > .titleChose {
                 grid-area: titleChose;
@@ -495,6 +504,7 @@ body {
 
                 & > .conception3 {
                     grid-area: conception3;
+
                 }
             }
 
@@ -643,6 +653,8 @@ body {
 
         & > header {
             grid-area: header;
+            padding-top: 30px;
+            padding-bottom: 20px;
         }
 
         & > nav {
@@ -652,6 +664,13 @@ body {
 
         & > .textIntro {
             grid-area: textIntro;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .textIntro > h2 {
+            padding-bottom: 20px;
         }
 
         & > .justification {
@@ -735,7 +754,7 @@ body {
                 grid-area: typePro2;
                 text-align: center;
                 & .overlay {
-                    padding: 40px;
+                    padding: 25px;
                 }
             }
             & > .typePro3 {
@@ -756,6 +775,7 @@ body {
                 "choseTwo";
             grid-template-columns: 100%;
             grid-template-rows: auto auto auto;
+
 
             & > .titleChose {
                 grid-area: titleChose;
@@ -783,6 +803,8 @@ body {
 
             grid-template-columns: 33.3% 33.3% 33.3%;
             grid-template-rows: auto auto auto auto auto auto;
+            margin-left: 50px;
+            margin-right: 50px;
 
             & > .titleProcess {
                 grid-area: titleProcess;
@@ -917,19 +939,29 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
 
+
         & > .hyperSocial {
             grid-area: hyperSocial;
         }
 
-        & > .socialmedia {
-            grid-area: socialmedia;
-        }
-        & > .contactDetails {
-            grid-area: contactDetails;
-        }
         & > .submit {
             grid-area: submit;
+            margin-bottom: 40px;
         }
+
+        & > .contactDetails {
+            grid-area: contactDetails;
+             margin-bottom: 40px;
+        }
+
+        & > .socialmedia {
+            grid-area: socialmedia;
+            margin-bottom: 40px;
+
+
+        }
+
+
     }
 
 

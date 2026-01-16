@@ -26,6 +26,12 @@ html {
     line-height: 2.5ch;
 }
 
+/*Titres*/
+
+.h2 {
+    color: var(--couleurRouge);
+}
+
 /*Rythme*/
 
 body > section {
@@ -33,9 +39,9 @@ body > section {
     margin-bottom: var(--espace-courant);
 }
 
-/*body > section > div {
-    margin-top: var(--espace-inmense);
-}*/
+body > section > div {
+    margin-bottom: var(--espace-courant);
+}
 
 .concept > div:first-of-type {
     margin-top: var(--espace-grand);
