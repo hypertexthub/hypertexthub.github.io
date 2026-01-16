@@ -102,6 +102,10 @@ nav li a {
     color: var(--couleurBlanc);
 }
 
+nav :nth-last-of-type(1) {
+    padding-right: 10px;
+}
+
 body {
     background-color: var(--couleurGris);
     max-width: 1920px;
@@ -116,8 +120,8 @@ header {
 }
 
 footer {
-    background-color: var(--couleurVerte);
     color: var(--couleurBlanc);
+    background-color: var(--couleurVerte);
 }
 
 .rightsReserved {

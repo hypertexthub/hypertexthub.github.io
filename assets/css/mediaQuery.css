@@ -942,11 +942,14 @@ body {
 
         & > .hyperSocial {
             grid-area: hyperSocial;
+
+
         }
 
         & > .submit {
             grid-area: submit;
             margin-bottom: 40px;
+
         }
 
         & > .contactDetails {
