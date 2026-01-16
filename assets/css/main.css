@@ -33,23 +33,23 @@ body > section {
     margin-bottom: var(--espace-courant);
 }
 
-body > section > div {
-    margin-top: var(--espace-courant);
-}
+/*body > section > div {
+    margin-top: var(--espace-inmense);
+}*/
 
 .concept > div:first-of-type {
     margin-top: var(--espace-grand);
+}
 
-    & .concept > div:nth-last-of-type {
-        margin-bottom: var(--espace-grand);
-    }
+.concept > div:nth-last-of-type {
+    margin-bottom: var(--espace-inmense);
 }
 
 .design > div:first-of-type {
     margin-top: var(--espace-grand);
 
     & .design > div:nth-last-of-type {
-        margin-bottom: var(--espace-grand);
+        margin-bottom: var(--espace-inmense);
     }
 }
 
@@ -57,7 +57,7 @@ body > section > div {
     margin-top: var(--espace-grand);
 
     & .develop > div:nth-last-of-type {
-        margin-bottom: var(--espace-grand);
+        margin-bottom: var(--espace-inmense);
     }
 }
 
@@ -65,7 +65,7 @@ body > section > div {
     margin-top: var(--espace-grand);
 
     & .frame > div:nth-last-of-type {
-        margin-bottom: var(--espace-grand);
+        margin-bottom: var(--espace-inmense);
     }
 }
 
@@ -73,9 +73,11 @@ body > section > div {
     margin-top: var(--espace-grand);
 
     & .lunch > div:nth-last-of-type {
-        margin-bottom: var(--espace-grand);
+        margin-bottom: var(--espace-inmense);
     }
 }
+
+/*Rythme end*/
 
 nav {
     display: flex;
@@ -188,6 +190,11 @@ input {
 
 .processsvg {
     width: 200px;
+    height: auto;
+}
+
+.processsvg2 {
+    width: 130px;
     height: auto;
 }
 
