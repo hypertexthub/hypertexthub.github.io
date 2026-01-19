@@ -605,7 +605,7 @@ body {
             grid-template-areas:
                 "hyperSocial hyperSocial hyperSocial"
                 "submit contactDetails socialmedia ";
-            grid-template-columns: 35% 35% 30%;
+            grid-template-columns: 33.3% 33.3% 33.3%;
             grid-template-rows: auto auto;
 
             & > .hyperSocial {
