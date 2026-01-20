@@ -105,10 +105,58 @@ nav > ul {
 nav li a {
     text-decoration: none;
     color: var(--couleurBlanc);
+    font-weight: 400;
+    transition: color 200ms ease;
+}
+
+nav li a:hover {
+    font-weight: 600;
+    color: var(--couleurVerte);
 }
 
 nav :nth-last-of-type(1) {
     padding-right: 10px;
+}
+
+/*menu deroulant*/
+
+.dropdownmenu {
+    position: relative;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.dropdownmenu .container {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    background-color: var(--couleurBlanc);
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-5px);
+    transition:
+        opacity 300ms ease,
+        transform 300ms ease;
+}
+
+.dropdownmenu .container li a {
+    color: var(--couleurVerte);
+}
+
+.dropdownmenu:hover .container {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.langContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 /*Body-AreaColors*/
@@ -194,6 +242,11 @@ input {
 .processsvg {
     width: 200px;
     height: auto;
+}
+
+.logonav {
+    width: 25px;
+    height: 25px;
 }
 
 .processsvg2 {
